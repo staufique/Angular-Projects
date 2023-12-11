@@ -1,0 +1,116 @@
+<h1>Hello Angular</h1>
+<h2>{{title}}</h2>
+<!-- <app-login></app-login>
+
+<button (click)="getData('hello')">Click me</button>
+<br>
+<br>
+ when we release the key the data will be given 
+<input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup">
+<br>
+<br>
+ if we press the key and hold it the key will pressing multiple times
+<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="event keydown">
+<br>
+<br>
+ if we type something in that box the value will remain hold if we focus on 
+another field the value will be give 
+<input type="text" #box2 (blur)="getData(box2.value)" placeholder="event blur">
+<br>
+<br>
+ input will work same as keydown event
+<input type="text" #box3 (input)="getData(box3.value)" placeholder="event input">
+
+<h3 (mouseover)="getData('mouseover')">Mouse Over</h3>
+<br>
+<h3 (mouseleave)="getData('mouseleave')">Mouse leave</h3> -->
+
+
+<!-- getting value from input field and showing them to browser by clicking on button -->
+<!-- <input type="text" #box  placeholder="Event Name" name="name" />
+<button (click)="getValue(box.value)">Click</button>
+<p>
+    {{displayval}}
+</p> -->
+
+<!-- adding and substracting value by clicking on buttons -->
+<!-- <button class="sub" (click)="getCount('sub')">--</button>
+<p>{{count}}</p>
+<button class="add" (click)="getCount('add')">++</button>
+ -->
+
+<!-- property binding vs interpolation
+interpolation are work with string and numeric values but
+property binding works with boolean values -->
+<!-- example of interpolation -->
+<!-- <input type="text" value="{{name}}" disabled={{disable}}/>
+<br>
+<br> -->
+<!-- example of property binding -->
+<!-- <input type="text" [value]=name [disabled]="disable"/> -->
+
+<!-- using of if else statement in Angular -->
+<!-- <h1 *ngIf="show else elseBlock">
+    Hi from Taufique...
+</h1>
+<ng-template #elseBlock>
+    <h1>Else Condition</h1>
+</ng-template> -->
+
+<!-- another way to use if else condition in Angular -->
+<!-- <h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+    <h1>if Condition</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>Else Condition</h1>
+</ng-template> -->
+
+<!-- multiple condition or else-if  
+if we want to use if-else-if condition we have to write 
+code like this because in angular there is no such
+an statement like if-else-if-->
+<!-- <ng-template [ngIf]="color==='red'">
+    <h1 style="color: red">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green">Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color: blue">Blue Color</h1>
+</ng-template> -->
+
+<!-- use of switch case in angular -->
+<!-- <div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color : red">Red Color</h1>
+    <h1 *ngSwitchCase="'green'" style="color : green">Green Color</h1>
+    <h1 *ngSwitchCase="'blue'" style="color : blue">Blue Color</h1>
+    <h1 *ngSwitchCase="'orange'" style="color : orange">Orange Color</h1>
+    <h1 *ngSwitchDefault >Unknown Color</h1>
+</div> -->
+
+<!-- using of for loop in angular 
+using for loop in simple array-->
+<!-- <h3 *ngFor="let item of users">Name is :{{item}}</h3> -->
+
+<!-- using for loop with angular object  -->
+<!-- <h3 *ngFor="let item of userDetails">
+    Name:{{item.name}}
+    Email:{{item.email}}
+    Number:{{item.no}}
+</h3> -->
+
+<!-- using of nested loop in angular  -->
+<!-- <ul *ngFor="let user of users">
+    <li>Name: {{user.name}}</li>
+    <li>Phone: {{user.phone}}</li>
+    <li>Social Accounts</li>
+    <ul *ngFor="let account of user.socialAcoounts">
+        <li>{{account}}</li>
+    </ul>
+</ul> -->
+
+<!-- style binding in angular -->
+<!-- <h1 [style.color]="color" [style.backgroundColor]="bgColor">Style Binding</h1>
+<button (click)="updateColor()">Click</button> -->
+
